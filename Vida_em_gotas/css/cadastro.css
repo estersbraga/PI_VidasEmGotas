@@ -1,0 +1,102 @@
+/* Estilo geral */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFEB99;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container principal */
+.cadastro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Caixa de cadastro */
+.cadastro-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    border: 2px solid #e0b25a;
+}
+
+.cadastro-box input, 
+.cadastro-box select {
+    width: 100%; /* Mantém todas as caixas do mesmo tamanho */
+    height: 45px; /* Ajusta a altura uniformemente */
+    font-size: 16px; /* Mantém a fonte padronizada */
+    box-sizing: border-box; /* Evita que padding afete o tamanho */
+    text-align: center; /* Centraliza o texto dentro das caixas */
+}
+
+/* Título */
+h2 {
+    color: #FF0000;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Inputs e selects */
+.cadastro-box input,
+.cadastro-box select {
+    width: calc(100% - 20px);
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: block;
+    text-align: left;
+}
+
+/* Botão de cadastro */
+.cadastro-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cadastro-box button:hover {
+    background-color: darkred;
+}
+
+/* Ícone de voltar */
+.voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.voltar:hover {
+    color: darkred;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.logo img {
+    width: 50px;
+}

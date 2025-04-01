@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Doação - Vida em Gotas</title>
+    <link rel="stylesheet" href="/css/agendamento.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calendar-section">
+            <div class="back-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#FFE69C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            
+            <div class="clock-icon">
+                <div class="clock-circle">
+                    <i class="fas fa-clock"></i>
+                </div>
+            </div>
+            
+            <button class="schedule-button">Agendar Doação</button>
+            
+            <div class="month-selector">
+                <span class="month-nav">&lt;</span>
+                <span class="month-name">JULHO</span>
+                <span class="month-nav">&gt;</span>
+            </div>
+            
+            <div class="calendar">
+                <div class="calendar-grid">
+                    <div class="calendar-day">29</div>
+                    <div class="calendar-day">30</div>
+                    <div class="calendar-day">31</div>
+                    <div class="calendar-day">01</div>
+                    <div class="calendar-day">02</div>
+                    <div class="calendar-day">03</div>
+                    <div class="calendar-day">04</div>
+                    <div class="calendar-day">05</div>
+                    <div class="calendar-day">06</div>
+                    <div class="calendar-day">07</div>
+                    <div class="calendar-day">08</div>
+                    <div class="calendar-day">09</div>
+                    <div class="calendar-day">10</div>
+                    <div class="calendar-day">11</div>
+                    <div class="calendar-day">12</div>
+                    <div class="calendar-day">13</div>
+                    <div class="calendar-day">14</div>
+                    <div class="calendar-day">15</div>
+                    <div class="calendar-day">16</div>
+                    <div class="calendar-day">17</div>
+                    <div class="calendar-day">18</div>
+                    <div class="calendar-day">19</div>
+                    <div class="calendar-day">20</div>
+                    <div class="calendar-day">21</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="details-section">
+            <div class="unit-selector">
+                <h2>Escolha a Unidade:</h2>
+                <div class="dropdown">
+                    <div class="dropdown-selected">
+                        <span>Selecione uma unidade</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="dropdown-options">
+                        <div class="dropdown-option">Hospital A</div>
+                        <div class="dropdown-option">Hospital B</div>
+                        <div class="dropdown-option">Hospital C</div>
+                        <div class="dropdown-option">Hospital D</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="time-selector">
+                <h2>Qual seria o melhor Horário?</h2>
+                <div class="time-options">
+                    <button class="time-option">09:00</button>
+                    <button class="time-option">10:00</button>
+                    <button class="time-option">16:00</button>
+                </div>
+                <a href="#" class="custom-time">Escolher outro horário</a>
+            </div>
+            
+            <button class="confirm-button">Confirmar Doação</button>
+        </div>
+    </div>
+    
+    <!-- Pop-up de confirmação -->
+    <div class="confirmation-popup" id="confirmationPopup">
+        <div class="popup-content">
+            <div class="popup-text">
+                <h2>Agendamento Confirmado! <span class="blood-drop">💧</span></h2>
+                <p>Obrigado por agendar sua doação de sangue!</p>
+                <p>Sua generosidade fará toda a diferença na vida de alguém.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Overlay para escurecer o fundo quando o pop-up estiver ativo -->
+    <div class="overlay" id="overlay"></div>
+    
+    <script src="/js/agendamento.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Agendamento - Vida em Gotas</title>
+    <link rel="stylesheet" href="/css/detalhes_agendamento.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="back-button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#FF4B4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        
+        <div class="content">
+            <div class="mascot">
+                <img src="/imagens/blood-drop.png" alt="Mascote gota de sangue">
+            </div>
+            
+            <div class="appointment-card">
+                <div class="card-header">
+                    Doação
+                </div>
+                
+                <div class="card-details">
+                    <div class="detail-item">
+                        <strong>Data:</strong> 12/05/2025
+                    </div>
+                    <div class="detail-item">
+                        <strong>Horário:</strong> 08:50
+                    </div>
+                    <div class="detail-item">
+                        <strong>Local:</strong> Av. Rebouças - 143
+                    </div>
+                </div>
+                
+                <div class="card-actions">
+                    <button class="delete-button" id="deleteButton">Excluir Agendamento</button>
+                    <button class="edit-button" id="editButton">Editar Agendamento</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Pop-up de confirmação de exclusão -->
+    <div class="delete-popup" id="deletePopup">
+        <div class="popup-content">
+            <h2>Excluir Agendamento</h2>
+            <p>Tem certeza que deseja excluir esse agendamento?</p>
+            <div class="popup-actions">
+                <button class="confirm-delete-button" id="confirmDeleteButton">Excluir Agendamento</button>
+                <button class="cancel-delete-button" id="cancelDeleteButton">Voltar ao Agendamento</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Overlay para escurecer o fundo -->
+    <div class="overlay" id="overlay"></div>
+    
+    <script src="/js/detalhes_agendamento.js"></script>
+</body>
+</html>

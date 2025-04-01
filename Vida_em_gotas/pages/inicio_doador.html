@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida em Gotas - Doadores</title>
+    <link rel="stylesheet" href="/css/inicio_doador.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body class="body-doacao">
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <a href="/pages/inicio.html" class="back-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+            </a>
+            <div class="user-profile">
+                <div class="avatar">
+                    <img src="/imagens/icone-perfil.png" alt="Usuário">
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <button class="nav-button" onclick="navegarPara('/pages/detalhes_agendamento.html')">Agendamentos</button>
+                <button class="nav-button" onclick="navegarPara('/pages/sobre_nos.html')">Sobre nós</button>
+                <button class="nav-button" onclick="navegarPara('/pages/blog.html')">Blog</button>
+                <button class="nav-button" onclick="navegarPara('/pages/suporte.html')">Suporte</button>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h1 class="welcome-text">Seja bem-vindo!</h1>
+                <div class="logo">
+                    <img src="/imagens/logo.png" alt="Vida em Gotas Logo">
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <button class="donate-button" onclick="navegarPara('agendar_doacao.html')">Agendar doação</button>
+            </div>
+            
+            <div class="campaign-banner">
+                <img src="/imagens/blond-bank.png" alt="World Blood Donor Day">
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/inicio_doador.js"></script>
+</body>
+</html>
