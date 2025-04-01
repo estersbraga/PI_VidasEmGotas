@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidas em Gotas - Doação de Sangue</title>
+    <style>
+        /* Reset e estilos gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 25%;
+            background-color: #ff6b6b;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .user-profile {
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            background-color: #ffe066;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: #ff6b6b;
+        }
+
+        .menu {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .menu-button {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ffe066;
+            border-radius: 25px;
+            background: transparent;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .menu-button:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            background-color: #ffd1dc;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            height: 50px;
+        }
+
+        .logo img {
+            height: 100%;
+            width: auto;
+        }
+
+        .welcome-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .welcome-section h1 {
+            font-size: 36px;
+            color: #ffb347;
+            margin-bottom: 30px;
+        }
+
+        .report-button {
+            padding: 15px 40px;
+            background-color: #ffb347;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 400px;
+            max-width: 100%;
+        }
+
+        .report-button:hover {
+            background-color: #ff9f1c;
+        }
+
+        .campaigns-section {
+            margin-top: 20px;
+        }
+
+        .campaign-banner {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .campaign-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                width: 100%;
+                padding-bottom: 30px;
+            }
+            
+            .logo {
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="back-button">
+                ←
+            </div>
+            <div class="user-profile">
+                <div class="avatar">
+                    👤
+                </div>
+            </div>
+            <div class="menu">
+                <button class="menu-button">Sobre nós</button>
+                <button class="menu-button">Blog</button>
+                <button class="menu-button">Suporte</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <div class="logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-OcFojB6oqbXvPzm3cOKZObctbXIQdB.png" alt="Vidas em Gotas">
+                </div>
+            </div>
+            
+            <div class="welcome-section">
+                <h1>Seja bem-vindo!</h1>
+                <button class="report-button">Relatório</button>
+            </div>
+
+            <div class="campaigns-section">
+                <div class="campaign-banner">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-eaJCLFgxZWQHO15jEGt6A5lItZGbRP.png" alt="Campanha de Doação de Sangue">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Adicionar funcionalidade aos botões
+        document.querySelectorAll('.menu-button').forEach(button => {
+            button.addEventListener('click', function() {
+                alert(`Você clicou em: ${this.textContent}`);
+            });
+        });
+        
+        // Botão de relatório
+        document.querySelector('.report-button').addEventListener('click', function() {
+            alert('Gerando relatório...');
+        });
+        
+        // Botão de voltar
+        document.querySelector('.back-button').addEventListener('click', function() {
+            alert('Voltando para a página anterior...');
+        });
+    </script>
+</body>
+</html>
