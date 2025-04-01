@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Instituição</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="/pages/inicio.html" class="voltar">&#8592;</a>
+    </header>
+    <div class="cadastro-container">
+        <div class="cadastro-box">
+            <h2>CADASTRE SUA INSTITUIÇÃO</h2>
+            <form id="cadastroInstituicaoForm">
+                <input type="text" id="nome" placeholder="Nome da Instituição" required>
+                <input type="text" id="cnpj" placeholder="CNPJ" maxlength="14" required>
+                <input type="text" id="telefone" placeholder="Telefone" required>
+                <input type="text" id="endereco" placeholder="Endereço" required>
+                <input type="password" id="senha" placeholder="Senha (8 caracteres)" maxlength="8" required>
+                <select id="tipoSanguineoNecessario">
+                    <option value="O-">O-</option>
+                    <option value="O+">O+</option>
+                    <option value="A-">A-</option>
+                    <option value="A+">A+</option>
+                    <option value="B-">B-</option>
+                    <option value="B+">B+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="AB+">AB+</option>
+                </select>    
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="/js/cadastro.js"></script>
+</body>
+</html>
