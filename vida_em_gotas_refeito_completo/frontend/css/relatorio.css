@@ -1,0 +1,151 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #FFC0CB; /* Fundo rosa */
+    color: #333;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.content {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FFF3D8; /* Fundo amarelo claro */
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    margin-bottom: 8px;
+    align-self: flex-start;
+}
+
+.period-container {
+    background-color: #FFC0CB;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.period-title {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.period-inputs {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.period-text {
+    color: white;
+}
+
+.date-input {
+    background-color: #FF4B4B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    width: 200px;
+    text-align: center;
+}
+
+.date-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.generate-button {
+    background-color: #FF4B4B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 32px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.generate-button:hover {
+    background-color: #E53E3E;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFC0CB;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.report-table th, .report-table td {
+    padding: 12px 16px;
+    text-align: center;
+}
+
+.report-table th {
+    color: #D87093;
+    font-weight: 500;
+    border-bottom: 1px solid #FFB6C1;
+}
+
+.report-table th:not(:last-child) {
+    border-right: 1px solid #FFB6C1;
+}
+
+.report-table td:not(:last-child) {
+    border-right: 1px solid #FFB6C1;
+}
+
+.report-table tr:not(:last-child) td {
+    border-bottom: 1px solid #FFB6C1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .period-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .period-inputs {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .date-input {
+        width: 45%;
+    }
+    
+    .generate-button {
+        width: 100%;
+    }
+}

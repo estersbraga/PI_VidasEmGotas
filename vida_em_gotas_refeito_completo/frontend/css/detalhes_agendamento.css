@@ -1,0 +1,220 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #FFC0CB; /* Fundo rosa */
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 20px;
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.mascot {
+    flex: 0 0 200px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.mascot img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.1));
+}
+
+.appointment-card {
+    background-color: #FF6B6B; /* Fundo vermelho/coral */
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appointment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: #FFE69C; /* Fundo amarelo */
+    color: #333;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.card-details {
+    background-color: #FFE69C; /* Fundo amarelo */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-item {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.detail-item:last-child {
+    margin-bottom: 0;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+}
+
+.delete-button, .edit-button {
+    background-color: #FF3B3B; /* Vermelho mais escuro */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    flex: 1;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-button {
+    background-color: #FF3B3B; /* Mesmo vermelho */
+}
+
+.delete-button:hover, .edit-button:hover {
+    background-color: #E53535;
+    transform: scale(1.05);
+}
+
+/* Pop-up de exclusão */
+.delete-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFE69C; /* Fundo amarelo */
+    border-radius: 16px;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.popup-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.popup-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.confirm-delete-button, .cancel-delete-button {
+    background-color: #FF3B3B; /* Vermelho */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cancel-delete-button {
+    background-color: #FF3B3B; /* Mesmo vermelho */
+}
+
+.confirm-delete-button:hover, .cancel-delete-button:hover {
+    background-color: #E53535;
+    transform: scale(1.02);
+}
+
+/* Overlay para escurecer o fundo */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+    backdrop-filter: blur(3px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        padding-top: 70px;
+    }
+    
+    .mascot {
+        margin-bottom: 20px;
+    }
+    
+    .appointment-card {
+        width: 90%;
+    }
+}

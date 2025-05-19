@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte</title>
+    <link rel="stylesheet" href="/css/suporte.css">
+</head>
+<body class="body">
+    <header>
+        <a href="/pages/inicio.html" class="voltar">&#8592;</a>
+    </header>
+    
+    <section class="suporte">
+        <h1>SUPORTE</h1>
+        <div class="suporte-box">
+            <p>
+                Canal de atendimento para sugestões, elogios,  
+                reclamações ou denúncias, com o objetivo de  
+                melhorar a qualidade dos serviços prestados.
+            </p>
+
+            <p class="telefone"><strong>Telefone:</strong> (11) 3448-6954</p>
+            <p class="email"><strong>E-mail:</strong> 
+                <a href="mailto:ouvidoria@vidaemgotas.sp.gov.br">ouvidoria@vidaemgotas.sp.gov.br</a>
+            </p>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector(".voltar").addEventListener("click", function(event) {
+                event.preventDefault();
+                window.location.href = "/pages/inicio.html";  // Redireciona diretamente para a tela inicial
+            });
+        });
+    </script>
+</body>
+</html>

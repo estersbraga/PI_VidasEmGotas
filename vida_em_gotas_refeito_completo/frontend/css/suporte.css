@@ -1,0 +1,113 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Layout principal */
+.body {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Divisão da tela */
+.suporte {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Parte superior amarela */
+.suporte::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: #FFD966;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Parte inferior vermelha */
+.suporte::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background: #FF6961;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Botão de voltar */
+.voltar {
+    position: absolute;
+    top: 20px; 
+    left: 20px;
+    font-size: 24px; 
+    color: #FF6961;
+    text-decoration: none;
+    z-index: 1000;  /* Certifica que está acima de outros elementos */
+    cursor: pointer;
+}
+
+/* Título "SUPORTE" acima da caixa */
+.suporte h1 {
+    color: #FF6961;
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 20%;
+}
+
+/* Caixa branca do suporte */
+/* Caixa branca do suporte */
+.suporte-box {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 80%;
+    margin: -20px auto 0;
+    z-index: 10;
+}
+
+/* Parágrafo principal do suporte */
+.suporte-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    white-space: pre-line; /* Mantém as quebras de linha */
+}
+
+/* Espaçamento entre os blocos de informação */
+.suporte-box p:nth-child(2) {
+    margin-top: 30px;
+}
+
+.suporte-box p:nth-child(3) {
+    margin-top: 10px;
+}
+
+/* Estilização do telefone e e-mail */
+.telefone, .email {
+    color: #FF6961;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}

@@ -1,0 +1,169 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #ffb347;
+    padding: 1.5rem;
+    position: relative;
+  }
+  
+  .back-button {
+    margin-bottom: 0.5rem;
+  }
+  
+  .arrow-left {
+    color: #000;
+  }
+  
+  .title {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+  
+  /* Card Styles */
+  .card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .card-content {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .card-content {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .card-content.reverse {
+      flex-direction: row-reverse;
+    }
+  }
+  
+  .card-subtitle {
+    color: #6c757d;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Importance Section */
+  .importance-section {
+    background-color: #ffb347;
+    padding: 1rem;
+  }
+  
+  .info-text {
+    color: #6c757d;
+    flex: 2;
+    font-weight: bold;
+  
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 20%;
+  }
+  
+  .info-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Stories Section */
+  .stories-section {
+    background-color: #ff0000;
+    padding: 2rem 1rem;
+  }
+  
+  h2.section-title-story {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: right;
+    margin-bottom: 1.5rem;
+  }
+  
+  h2.section-title-tips {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+  
+  .section-title {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .donor-card,
+  .patient-card {
+    margin-bottom: 1rem;
+  }
+  
+  .story-text {
+    font-weight: bold;
+    color: #6c757d;
+    flex: 3;
+  }
+  
+  .character-image {
+    max-width: 120px;
+    height: auto;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  /* Tips Section */
+  .tips-section {
+    background-color: #fce38c;
+    padding: 2rem 1rem;
+  }
+  
+  .tips-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .tip-title {
+    color: #ffb347;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tip-text {
+    color: #6c757d;
+    font-weight: bold;
+  }
+  
+ 

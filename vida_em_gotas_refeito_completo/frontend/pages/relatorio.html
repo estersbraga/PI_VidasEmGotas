@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório - Vida em Gotas</title>
+    <link rel="stylesheet" href="/css/relatorio.css">
+</head>
+<body>
+    <div class="container">
+        <main class="content">
+            <button class="back-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#FFA5B9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            
+            <div class="period-container">
+                <div class="period-title">Período</div>
+                <div class="period-inputs">
+                    <input 
+                        type="text" 
+                        placeholder="__/__/__"
+                        id="start-date"
+                        class="date-input"
+                    >
+                    
+                    <span class="period-text">até</span>
+                    
+                    <input 
+                        type="text" 
+                        placeholder="__/__/__"
+                        id="end-date"
+                        class="date-input"
+                    >
+                </div>
+                <button class="generate-button" id="generate-report">Gerar</button>
+            </div>
+            
+            <div class="table-container">
+                <table class="report-table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Hospital</th>
+                            <th>Tipo Sanguíneo</th>
+                            <th>Data</th>
+                            <th>Horário</th>
+                            <th>Local</th>
+                        </tr>
+                    </thead>
+                    <tbody id="report-data">
+                        <!-- Linhas vazias para corresponder ao design -->
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    
+    <script src="/js/relatorio.js"></script>
+</body>
+</html>

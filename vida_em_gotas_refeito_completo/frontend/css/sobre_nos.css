@@ -1,0 +1,125 @@
+/* Reset padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Cor de fundo da página */
+body {
+    background-color: #FF6961;
+    color: white;
+}
+
+/* Container principal */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+/* Botão de voltar (seta no canto esquerdo) */
+.back-button {
+    font-size: 28px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+}
+
+/* Ícone do coração (logo no canto direito) */
+.heart-icon {
+    position: absolute;
+    right: 20px;
+}
+
+.heart-icon img {
+    width: 50px;
+    height: auto;
+}
+
+/* Títulos */
+.title,
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left;
+    color: white;
+}
+
+/* Texto dentro do banner e nos cartões */
+.intro-banner p,
+.card p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Banner de introdução */
+.intro-banner {
+    background-color: #FFD966;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Seção de Missão, Visão e Valores */
+.mission {
+    margin-top: 30px;
+}
+
+/* Container dos cartões */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: stretch;
+}
+
+/* Cartões */
+.card {
+    background-color: #FFB347;
+    padding: 25px;
+    border-radius: 10px;
+    width: 32%;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .back-button {
+        left: 10px;
+    }
+
+    .heart-icon {
+        right: 10px;
+    }
+}
